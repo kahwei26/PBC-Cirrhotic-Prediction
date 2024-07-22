@@ -21,26 +21,26 @@ Wrapper feature selection can efffectivly select the features which can produce 
 - The original dataset includes missing values that are missing completely at random (MCAR). There are a total of 12 features out of 16 features having missing values, and the percentage of the missing values are up to 32.536%. KNN imputation is used to address this issue.
 - Normalization is done using MinMax scaler to scale the data to 0-1.
 - First round feature selection to get the top-N features using ensemble filter feature selection.
-</br＞
+<br>
 **Data Spliting**
 - Dataset is split into 90% training, 10% testing.
 - Upsampling techniques, SMOTE, is used to balanced the classes for training data.
-</br＞
+<br>
 **Model Traning**
 - Using BPSO, train models using RF, SVM and XGBoost with the optimal feature subset.
-</br＞
+<br>
 **Prediction**
 - Utilize the trained models to do cirrhotic stage prediction using the testing set
-</br＞
+<br>
 **Model Evaluation**
 - Based on the result, evaluate the performance of model in terms of accuracy, precision, recall and f1-score.
 
 ### Result
 EF-BPSO seems to produce a better outcome compared to single feature selection method.
 Random forest, with the features subset **Alk_Phos, Prothrombin, Ascites, Sex, Age, Copper, Hepatomegaly**, achieved best performance: <br>
-Accuracy 95.24%, 
-Precision: 94.12%, 
-Recall: 94.12%, 
+Accuracy 95.24%, <br>
+Precision: 94.12%, <br>
+Recall: 94.12%, <br>
 F1-Score: 94.12%
 
 ### Implementation
