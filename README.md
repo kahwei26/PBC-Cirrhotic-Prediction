@@ -37,7 +37,7 @@ Wrapper feature selection can efffectivly select the features which can produce 
 
 ### Result
 EF-BPSO seems to produce a better outcome compared to single feature selection method.
-Random forest, with the features subset **Alk_Phos, Prothrombin, Ascites, Sex, Age, Copper, Hepatomegaly**, achieved best performance: 
+Random forest, with the features subset **Alk_Phos, Prothrombin, Ascites, Sex, Age, Copper, Hepatomegaly**, achieved best performance: <br>
 Accuracy 95.24%, 
 Precision: 94.12%, 
 Recall: 94.12%, 
