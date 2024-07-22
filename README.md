@@ -46,4 +46,4 @@ F1-Score: 94.12%
 ### Implementation
 The model is then implemented into a web application using Flask. This application facilitates the prediction of the PBC cirrhotic stage through a webpage, where users can input all required clinical information, as illustrated in figure below, to get prediction of PBC cirrhotic stage.
 ![webpage](https://github.com/kahwei26/PBC-Cirrhotic-Prediction/blob/847081174d506b915252b9a11abba45b69d0a5d0/img/Screenshot%202024-07-22%20231617.png?raw=true)
-
+![result](https://github.com/kahwei26/PBC-Cirrhotic-Prediction/blob/df96f692f371370a9f87aca99d33fc585827d2a0/img/Screenshot%202024-07-22%20232137.png?raw=true)
