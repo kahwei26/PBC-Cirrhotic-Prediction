@@ -23,13 +23,13 @@ Wrapper feature selection can efffectivly select the features which can produce 
 - First round feature selection to get the top-N features using ensemble filter feature selection.
 **Data Spliting**
 - Dataset is split into 90% training, 10% testing.
-- Upsampling techniques, SMOTE, is used to balanced the classes for training data.
+- Upsampling techniques, SMOTE, is used to balanced the classes for training data. <br>
 **Model Traning**
-- Using BPSO, train models using RF, SVM and XGBoost with the optimal feature subset.
+- Using BPSO, train models using RF, SVM and XGBoost with the optimal feature subset. <br>
 **Prediction**
-- Utilize the trained models to do cirrhotic stage prediction using the testing se
+- Utilize the trained models to do cirrhotic stage prediction using the testing set. <br>
 **Model Evaluation**
-- Based on the result, evaluate the performance of model in terms of accuracy, precision, recall and f1-score.
+- Based on the result, evaluate the performance of model in terms of accuracy, precision, recall and f1-score. <br>
 
 ### Result
 EF-BPSO seems to produce a better outcome compared to single feature selection method.
