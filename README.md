@@ -21,13 +21,17 @@ Wrapper feature selection can efffectivly select the features which can produce 
 - The original dataset includes missing values that are missing completely at random (MCAR). There are a total of 12 features out of 16 features having missing values, and the percentage of the missing values are up to 32.536%. KNN imputation is used to address this issue.
 - Normalization is done using MinMax scaler to scale the data to 0-1.
 - First round feature selection to get the top-N features using ensemble filter feature selection. <br>
+
 **Data Spliting**
 - Dataset is split into 90% training, 10% testing.
 - Upsampling techniques, SMOTE, is used to balanced the classes for training data. <br>
-**Model Traning**
+
+**Model Training**
 - Using BPSO, train models using RF, SVM and XGBoost with the optimal feature subset. <br>
+
 **Prediction**
 - Utilize the trained models to do cirrhotic stage prediction using the testing set. <br>
+
 **Model Evaluation**
 - Based on the result, evaluate the performance of model in terms of accuracy, precision, recall and f1-score. <br>
 
