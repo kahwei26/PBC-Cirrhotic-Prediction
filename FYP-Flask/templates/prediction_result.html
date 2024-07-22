@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: rgba(240, 248, 255, 0.665);
+            width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .result {
+            font-size: 1.5em;
+            color: rgb(204, 29, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            The patient is predicted to be <b>{{ prediction }}</b> with the confidence score of <b>{{ confidence_score
+                }}%</b>.
+        </div>
+        <br><br>
+        <a href="/prediction" class="button">Make another prediction</a>
+    </div>
+</body>
+
+</html>

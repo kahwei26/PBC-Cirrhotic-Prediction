@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cirrhotic Prediction</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .content {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 50%;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            margin-bottom: 10px;
+            padding-bottom: 30px;
+        }
+
+        .row:first-child {
+            padding-top: 0;
+        }
+
+        .row-button {
+            padding-left: auto;
+            padding-right: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>
+                <a href="/"><img src="{{ url_for('static', filename='medical.png') }}" style="width:25px; height:23px">
+                    PBC Site</a>
+            </h2>
+        </header>
+
+        <div class="content">
+            <div class="row">
+                <h1>Enter Patient Details</h1>
+            </div>
+
+            <div class="row">
+                <form action="/prediction" method="post">
+
+                    <label for="age">Age: </label>
+                    <input type="text" id="age" name="age"><br><br>
+
+                    <label for="sex">Sex: </label>
+                    <select id="sex" name="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br><br>
+
+                    <label for="ascites">Ascites: </label>
+                    <select id="ascites" name="ascites">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+
+                    <label for="hepatomegaly">Hepatomegaly: </label>
+                    <select id="hepatomegaly" name="hepatomegaly">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+
+                    <label for="spiders">Spiders: </label>
+                    <select id="spiders" name="spiders">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+
+                    <label for="edema">Edema: </label>
+                    <select id="edema" name="edema">
+                        <option value="y">Edema despite diuretic therapy</option>
+                        <option value="s">Edema present
+                            without diuretics / Edema resolved by diuretics</option>
+                        <option value="n">No Edema</option>
+                    </select><br><br>
+
+                    <label for="bilirubin">Bilirubin Level: </label>
+                    <input type="text" id="bilirubin" name="bilirubin"><br><br>
+
+                    <label for="cholesterol">Cholesterol Level: </label>
+                    <input type="text" id="cholesterol" name="cholesterol"><br><br>
+
+                    <label for="albumin">Albumin Level: </label>
+                    <input type="text" id="albumin" name="albumin"><br><br>
+
+                    <label for="copper">Copper Level: </label>
+                    <input type="text" id="copper" name="copper"><br><br>
+
+                    <label for="alk_phos">Alk Phos Level: </label>
+                    <input type="text" id="alk_phos" name="alk_phos"><br><br>
+
+                    <label for="sgot">SGOT Level: </label>
+                    <input type="text" id="sgot" name="sgot"><br><br>
+
+                    <label for="tryglicerides">Tryglicerides Level: </label>
+                    <input type="text" id="tryglicerides" name="tryglicerides"><br><br>
+
+                    <label for="platelets">Platelets Level: </label>
+                    <input type="text" id="platelets" name="platelets"><br><br>
+
+                    <label for="prothrombin">Prothrombin Level: </label>
+                    <input type="text" id="prothrombin" name="prothrombin"><br><br>
+
+                    <div class="row-button">
+                        <input type="submit" class="button" value="Predict">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
